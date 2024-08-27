@@ -25,7 +25,7 @@ if ingredients_List:
     for fruit_chosen in ingredients_List:
         ingredients_string+=fruit_chosen+' '
         fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-        fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+        fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=Tru
 
         
     #st.write(ingredients_string)
